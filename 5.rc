@@ -1,0 +1,320 @@
+// Microsoft Visual C++ generated resource script.
+//
+#pragma code_page(65001)
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADD DIALOGEX 0, 0, 171, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Окно добавления элемента в стек"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,61,57,50,14,WS_GROUP
+    CTEXT           "Введите строку",IDC_STATIC,22,17,128,8
+    EDITTEXT        IDC_EDIT1,22,35,130,14,ES_AUTOHSCROLL
+END
+
+IDD_DEL DIALOGEX 0, 0, 139, 59
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Удаление элемента"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Удалить элемент",IDOK,29,31,76,14
+    CTEXT           "Вы уверены, что стек не пуст?",IDC_STATIC,14,17,109,8
+END
+
+IDD_GET DIALOGEX 0, 0, 285, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Доступ к элементам стека"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Вершина стека содержит элемент:",IDC_STATIC,16,21,97,23
+    LTEXT           "",IDC_STATIC1,114,27,143,13
+    DEFPUSHBUTTON   "OK",IDC_BUTTON_2,173,55,50,14
+END
+
+IDM_ABOUT DIALOGEX 0, 0, 93, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Создано"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Комаров Александр",IDC_STATIC,7,14,78,8
+    LTEXT           "Октябрь 2019",IDC_STATIC,7,31,66,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_DEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_GET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+
+    IDM_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 86
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MY5                 ICON                    "5.ico"
+
+IDI_SMALL               ICON                    "small.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_MY5 MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Exit",                        ID_GAME_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_MY5 ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "5"
+    IDC_MY5                 "MY5"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEW_GAME             "5"
+    ID_ENEMY_COMPUTER       "5"
+    ID_GAME_EXIT            "5"
+    ID_SETTINGS             "5"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_STATIC_PLAYERWON    "5"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_RADIO1              "5"
+    IDC_RADIO2              "5"
+    IDC_RADIO3              "5"
+    IDC_STATIC_1WINER       "5"
+    IDC_STATIC_2WINER       "5"
+    IDC_STATIC_DRAWS        "5"
+    IDC_RADIO4              "5"
+    IDC_RADIO5              "5"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ENEMY_HUMAN          "5"
+END
+
+STRINGTABLE
+BEGIN
+    ID_RADIO3X3             "5"
+    ID_RADIO4X4             "5"
+    ID_RADIO5X5             "5"
+    IDC_BUTTON_1            "5"
+    IDC_BUTTON_2            "5"
+    IDC_BUTTON_3            "5"
+    IDC_BUTTON_4            "5"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_RADIO6              "5"
+    IDC_EDIT1               "5"
+    IDC_STATIC1             "5"
+    IDC_STATIC2             "5"
+    IDC_STATIC3             "5"
+    IDC_STATIC4             "5"
+END
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Нейтральный (по умолчанию) (неизвестное значение дополнительного кода языка: 0x8) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_NEUTRAL, 0x8
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 321, 202
+STYLE DS_ABSALIGN | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_WINDOWEDGE | WS_EX_CONTROLPARENT | WS_EX_APPWINDOW | WS_EX_COMPOSITED
+CAPTION "Dialog"
+MENU IDC_MY5
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Добавить элемент в стек",IDC_BUTTON_1,7,7,138,37
+    PUSHBUTTON      "Удалить элемент из стека",IDC_BUTTON_3,7,45,138,36
+    PUSHBUTTON      "Получить элемент",IDC_BUTTON_4,7,82,138,35
+    LTEXT           "Максимальный элемент",IDC_STATIC,35,126,83,8
+    LTEXT           "Минимальный элемент",IDC_STATIC,36,161,79,8
+    LTEXT           "",IDC_STATIC2,7,143,138,9
+    LTEXT           "",IDC_STATIC3,7,175,135,9
+    CTEXT           "Элементы стека",IDC_STATIC,190,14,76,14
+    LTEXT           "",IDC_STATIC4,150,30,155,155
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "bitmap1.bmp"
+
+#endif    // Нейтральный (по умолчанию) (неизвестное значение дополнительного кода языка: 0x8) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
